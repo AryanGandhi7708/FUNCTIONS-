@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+    int n, sum = 0;
+    printf("Enter the score up to 20th question\n");
+    for(int i = 1; i <= 20; i++){
+        printf("Enter the score of %dth question: ", i);
+        scanf("%d", &n);
+        if(n == -1) break;
+        sum += n;
+    }
+    printf("Total score is %d\n", sum);
+    return 0;
+}
